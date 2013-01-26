@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+        android:background="#cc4400">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+            <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/time_label"
+                  android:textStyle="bold"
+                  android:textColor="#ffffff"/>
+            <EditText android:id="@+id/hour_time"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hours_hint"
+                    android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/minute_time"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/minutes_hint"
+                    android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/seconds_time"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/seconds_hint"
+                    android:inputType="numberDecimal"/>
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+            <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/distance_label"
+                  android:textStyle="bold"
+                  android:textColor="#ffffff"/>
+            <EditText android:id="@+id/distance_input"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:inputType="numberDecimal"/>
+            <Spinner
+                    android:id="@+id/distance_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/distance_array"
+                    android:prompt="@string/distance_prompt" />
+
+        </TableRow>
+
+        <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+            <TextView android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/pace_label"
+                  android:textStyle="bold"
+                  android:textColor="#ffffff"/>
+            <EditText android:id="@+id/hr_pace"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hour_pace_hint"
+                    android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/min_pace"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/min_pace_hint"
+                    android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/sec_pace"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/sec_pace_hint"
+                    android:inputType="numberDecimal"/>
+        </TableRow>
+
+    </TableLayout>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/midTextView"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:padding="10dp"
+     android:textSize="16sp"
+     android:background="#cc1100">
+    </TextView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="15dp">
+        <Button android:id="@+id/distance_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/distance_button_label"/>
+        <Button android:id="@+id/pace_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pace_button_label"/>
+        <Button android:id="@+id/time_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/time_button_label"/>
+        <Button android:id="@+id/reset_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reset_button_label"/>
+    </LinearLayout>
+
+</TableLayout>
+

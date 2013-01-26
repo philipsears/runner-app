@@ -1,0 +1,6 @@
+<resources>
+    <array name="distance_array">
+        <item>@string/miles_label</item>
+        <item>@string/kilometers_label</item>
+    </array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">android-runner</string>
+    <string name="main_title">Pace Calculator</string>
+    <string name="time_label">Time</string>
+    <string name="distance_label">Distance</string>
+    <string name="pace_label">Pace</string>
+    <string name="hours_hint">hrs</string>
+    <string name="minutes_hint">mins</string>
+    <string name="seconds_hint">secs</string>
+    <string name="miles_label">miles</string>
+    <string name="kilometers_label">km</string>
+    <string name="distance_prompt">distance</string>
+    <string name="hour_pace_hint">hrs</string>
+    <string name="min_pace_hint">min</string>
+    <string name="sec_pace_hint">sec</string>
+    <string name="distance_button_label"> Distance </string>
+    <string name="pace_button_label"> Pace </string>
+    <string name="time_button_label"> Time </string>
+    <string name="reset_button_label"> Reset </string>
+</resources>
+
+
+

@@ -1,0 +1,14 @@
+bin/
+gen/
+out/
+
+build.properties
+local.properties
+
+.settings/
+.project
+.classpath
+
+*.iml
+*.idea
+
